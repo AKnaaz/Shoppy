@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Shoppy - Product Management Dashboard
 
-## Getting Started
+## Project Description
+Shoppy is a responsive web application built with Next.js and React that allows users to browse and manage products. Users can register, log in, and access a personalized dashboard. The application supports adding products, viewing offers, and tracking product statistics. It is styled using Tailwind CSS and DaisyUI, ensuring a modern and user-friendly interface.
 
-First, run the development server:
+## Setup & Installation Instructions
+To set up this project locally, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Create a new Next.js project.
+2. Install the required packages:
+   - `next-auth` for authentication
+   - `mongodb` for database integration
+   - `react` and `javascript` for building frontend components
+   - `tailwindcss` and `daisyui` for responsive and modern styling
+3. Configure MongoDB connection for storing products and user data.
+4. Implement routing and page structure including the Dashboard and Add Product pages.
+5. Test all functionalities locally including login, registration, dashboard access, and product management.
+6. Deploy the application to Vercel for live access.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Route Summary
+- `/` : Home page showing welcome info, user info, and product/offers highlights.
+- `/products` : Page listing all available products.
+- `/dashboard` : Protected user dashboard showing product management options.
+- `/dashboard/add-product` : Protected page to add new products.
+- `/login` : User login page.
+- `/register` : User registration page.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
